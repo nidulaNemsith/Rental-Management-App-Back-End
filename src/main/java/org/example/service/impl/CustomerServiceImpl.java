@@ -43,7 +43,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
     @Override
     public void update(Customer customer) {
-        if(customerRepository.findById(customer.getId()).isPresent()){
+        if(customerRepository.findById(customer.getCustomerId()).isPresent()){
             customerRepository.save(
                     new ObjectMapper().convertValue(customer, CustomerEntity.class)
             );
