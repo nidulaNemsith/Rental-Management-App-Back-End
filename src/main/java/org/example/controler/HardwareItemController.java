@@ -1,7 +1,6 @@
 package org.example.controler;
 
 import lombok.RequiredArgsConstructor;
-import org.example.dto.Customer;
 import org.example.dto.HardwareItem;
 import org.example.service.HardwareItemService;
 import org.springframework.http.HttpStatus;
